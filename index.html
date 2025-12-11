@@ -1,93 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
   <meta charset="UTF-8">
-  <title>Samuele Munda </title>
-  <link rel="icon" type="image/png" href="/Users/samuele/Desktop/figure.run.png">
-  <link rel="apple-touch-icon" href="/Users/samuele/Desktop/figure.run.png">
+  <title>Samuele Munda</title>
+  <link rel="icon" type="image/png" href="heart.fill.png">
+  <link rel="apple-touch-icon" href="heart.fill.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
+  <style>
 
-  .content {
-    max-width: 600px;
-    margin: auto;
-    padding: 10px;
-  }
+    h1 {color:#38457c;}
 
-  h1 {color:#38457c;}
+    h1::before,
+    h2::before,
+    h3::before {
+      content: "~";
+    }
 
-  h1::before,
-  h2::before,
-  h3::before {
-    content: "~";
-  }
-
-  .crop img {
-        width: 200px;
-        height: 150px;
-        overflow: hidden;
-  }
-
-  body {
+    body {
+        min-height: 100vh;
+      display: flex;
+      flex-direction: column;
       background: white;
       font-family: "Helvetica Neue", sans-serif;
       text-rendering: optimizeLegibility;
       line-height: 1.5;
       line-break: strict;
-  }
+    }
 
-  .crop {
-    width: 100%;     /* larghezza desiderata */
-    height: 30px;    /* altezza desiderata */
-    overflow: hidden; /* nasconde le parti fuori */
-  }
+    .content {
+      max-width: 600px;
+      margin: auto;
+      padding: 12px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
 
-  .crop img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* ritaglia mantenendo le proporzioni */
-    object-position: center 35%; /* mantiene la parte superiore e non la centrale */
-  }
+    footer {
+      display: block;
+      margin-top: auto;
+      font-family: 'Courier New', monospace;
+      color: #b8b8b8;
+      font-weight: bold;
+      text-align: right;
+    }
 
-  .caption {
-    text-align: center; /* centra la didascalia */
-    font-size: 14px;
-    margin-top: 5px;
-    color: #333;
-  }
+    .crop {
+      width: 100%;
+      height: 30px; 
+      overflow: hidden;
+    }
 
-  a:link {
-    color: #5eaddf;
-    background-color: transparent;
-    text-decoration: underline;
-    font-weight: bold
-  }
+    .crop img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 35%;
+    }
 
-  a:visited {
-    color: #5eaddf;
-  }
-  a:hover {
-    color: hotpink;
-  }
-</style>
+    .caption {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 5px;
+      color: #333;
+    }
+
+    a:link {
+      color: #5eaddf;
+      background-color: transparent;
+      text-decoration: underline;
+      font-weight: bold
+    }
+
+    a:visited {
+      color: #5eaddf;
+    }
+    a:hover {
+      color: hotpink;
+    }
+  </style>
+  
 </head>
 
 <body>
 
 <div class="content">
-  <h1 style="color: #38457c;">Samuele</h1>
+  <h1>Samuele</h1>
   <p>Hi, I'm Samuele Munda. I mainly studied music and molecular biology, but I'm a curious guy and I basically dive into everything.<br>
   Now, I'm a research fellow in Bologna, Italy.</p>
 
-  <p>I'm not very active on social media, but you can find me there.
-    <p style="text-align: center; font-style: italic;">
-    <a href="https://www.instagram.com/samuelemunda/">instagram</a> – <a href="https://www.strava.com/athletes/99510630">strava</a> – <a href="https://x.com/samuele_munda">X</a>
-    </p>
+  <p>I'm not very active on social media, but you can find me there.</p>
+  <p style="text-align: center; font-style: italic;">
+    <a href="https://www.instagram.com/samuelemunda/">instagram</a> –
+    <a href="https://www.strava.com/athletes/99510630">strava</a> –
+    <a href="https://www.goodreads.com/user/show/101672000-samuele">goodreads</a> –
+    <a href="https://x.com/samuele_munda">X</a>
   </p>
+  
   <div class="crop-container">
     <div class="crop">
-      <img src="https://i2.wp.com/static.vecteezy.com/system/resources/previews/007/437/861/original/abstract-stripe-background-in-black-and-white-with-wavy-lines-pattern-free-vector.jpg" alt="line pattern">
+      <img src="https://i2.wp.com/static.vecteezy.com/system/resources/previews/007/437/861/original/abstract-stripe-background-in-black-and-white-with-wavy-lines-pattern-free-vector.jpg" alt="">
     </div>
   </div>
 
@@ -100,11 +114,13 @@
     <li>Programming</li>
     <li>Photography</li>
   </ul>
-  <br>
   
 
 
-  <p style="font-family: 'Courier New', monospace; color: #b8b8b8; font-weight: bold">2025-12-09</p>
+  
+  <footer>
+    <time datetime="2025-12-09">2025-12-10</time>
+  </footer>
 
 </div>
 
