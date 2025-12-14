@@ -10,7 +10,27 @@
 
   <style>
 
-    h1 {color:#38457c;}
+		body {
+			min-height: 100vh;
+			background: white;
+      font-family: "Helvetica Neue", sans-serif;
+      text-rendering: optimizeLegibility;
+      line-height: 1.5;
+		}
+
+		.container {
+			max-width: 600px;
+      margin: auto;
+      padding: 12px;
+			display: flex;
+			flex-direction: column;
+			height: 95vh;
+		}
+		.main {
+			flex: 1;
+		}
+
+		h1 {color:#38457c;}
 
     h1::before,
     h2::before,
@@ -18,27 +38,7 @@
       content: "~";
     }
 
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      background: white;
-      font-family: "Helvetica Neue", sans-serif;
-      text-rendering: optimizeLegibility;
-      line-height: 1.5;
-      line-break: strict;
-    }
-
-    .content {
-      max-width: 600px;
-      margin: auto;
-      padding: 12px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    footer {
+	  footer {
       display: block;
       margin-top: auto;
       font-family: 'Courier New', monospace;
@@ -47,7 +47,7 @@
       text-align: right;
     }
 
-    .crop {
+		.crop {
       width: 100%;
       height: 30px; 
       overflow: hidden;
@@ -60,7 +60,7 @@
       object-position: center 35%;
     }
 
-    .caption {
+		.caption {
       text-align: center;
       font-size: 14px;
       margin-top: 5px;
@@ -73,52 +73,53 @@
       text-decoration: underline;
       font-weight: bold
     }
-
     a:visited {
       color: #5eaddf;
     }
     a:hover {
       color: hotpink;
     }
+
+
   </style>
   
 </head>
 
 <body>
+	<div class="container">
+		<div class="main">
+			<h1>Samuele</h1>
+			<p>Hi, I'm Samuele Munda. I mainly studied music and molecular biology, but I'm a curious guy and I basically dive into everything.<br>
+			Now, I'm a research fellow in Bologna, Italy.</p>
 
-<div class="content">
-  <h1>Samuele</h1>
-  <p>Hi, I'm Samuele Munda. I mainly studied music and molecular biology, but I'm a curious guy and I basically dive into everything.<br>
-  Now, I'm a research fellow in Bologna, Italy.</p>
+			<p>I'm not very active on social media, but you can find me there.</p>
+			<p style="text-align: center; font-style: italic;">
+				<a href="https://www.instagram.com/samuelemunda/">instagram</a> –
+				<a href="https://www.strava.com/athletes/99510630">strava</a> –
+				<a href="https://www.goodreads.com/user/show/101672000-samuele">goodreads</a> –
+				<a href="https://x.com/samuele_munda">X</a>
+			</p><br>
+			
+			
+			<div class="crop">
+				<img src="https://i2.wp.com/static.vecteezy.com/system/resources/previews/007/437/861/original/abstract-stripe-background-in-black-and-white-with-wavy-lines-pattern-free-vector.jpg" alt="">
+			</div>
 
-  <p>I'm not very active on social media, but you can find me there.</p>
-  <p style="text-align: center; font-style: italic;">
-    <a href="https://www.instagram.com/samuelemunda/">instagram</a> –
-    <a href="https://www.strava.com/athletes/99510630">strava</a> –
-    <a href="https://www.goodreads.com/user/show/101672000-samuele">goodreads</a> –
-    <a href="https://x.com/samuele_munda">X</a>
-  </p><br>
-  
-  <div class="crop-container">
-    <div class="crop">
-      <img src="https://i2.wp.com/static.vecteezy.com/system/resources/previews/007/437/861/original/abstract-stripe-background-in-black-and-white-with-wavy-lines-pattern-free-vector.jpg" alt="">
-    </div>
-  </div>
-
-  <h3>Stuff I like:</h3>
-  <ul>
-    <li>Music</li>
-    <li>Technology</li>
-    <li>Videogames</li>
-    <li>Trekking and nature-related stuff</li>
-    <li>Programming</li>
-    <li>Photography</li>
-  </ul>
-  
-  <footer>
-    <time datetime="2025-12-09">2025-12-10</time>
-  </footer>
-
-</div>
+			<h3>Stuff I like:</h3>
+			<ul>
+				<li>Music</li>
+				<li>Technology</li>
+				<li>Videogames</li>
+				<li>Trekking and nature-related stuff</li>
+				<li>Programming</li>
+				<li>Photography</li>
+			</ul>
+		</div>
+		
+		<footer>
+			<time datetime="2025-12-09">2025-12-10</time>
+		</footer>
+	</div>
+</body>
 
 </body>
